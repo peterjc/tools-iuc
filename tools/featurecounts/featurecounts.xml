@@ -408,7 +408,9 @@
             <param name="include_feature_length_file" value="true"/>
             <output name="output" file="output_2_full.tab"/>
             <output name="output_summary" file="output_2_summary.tab"/>
-            <output name="output_feature_lengths" file="output_feature_lengths.tab"/>
+            <output name="output_feature_lengths" file="output_feature_lengths.tab">
+                <metadata name="column_names" value="Feature,Length"/>
+            </output>
         </test>
     </tests>
     
