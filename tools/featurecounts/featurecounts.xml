@@ -364,8 +364,12 @@
             <param name="reference_gene_sets" value="featureCounts_guide.gff" ftype="gff" />
             <param name="format" value="tabdel_short" />
             <param name="include_feature_length_file" value="true"/>
-            <output name="output" file="output_1_short.tab"/>
-            <output name="output_summary" file="output_1_summary.tab"/>
+            <output name="output" file="output_1_short.tab">
+                <metadata name="column_names" value="Foo,Bar"/>
+            </output>
+            <output name="output_summary" file="output_1_summary.tab">
+                <metadata name="column_names" value="Alpha,Beta,Gamma"/>
+            </output>
         </test>
         <test>
             <param name="alignment" value="featureCounts_input1.bam" ftype="bam" />
